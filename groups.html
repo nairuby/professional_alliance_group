@@ -1,0 +1,26 @@
+---
+layout: application
+permalink: /groups
+title: "Professional Alliance Collaboration Groups"
+description: "Explore our diverse collaboration groups and connect with professionals in your field."
+image: "/images/logo/arc_logo_coloured_groups.png" # Consider a different image for groups
+---
+
+<div class="preloader-new">
+    <div class="preloader-logo-new"></div>
+
+    <div class="loader-new"></div>
+</div>
+
+<section class="speakers-section-two" style="margin-top: 0">
+    <div class="auto-container">
+        <div class="sec-title text-center my-4">
+            <span class="display-4 text-danger font-weight-bold">Collaboration Groups</span>
+        </div>
+        <div class="row top-pd-mobile">
+            {% for group in site.groups %}
+            {% include group_block.liquid group=group %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

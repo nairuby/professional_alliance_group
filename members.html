@@ -1,0 +1,34 @@
+---
+layout: application
+permalink: /members
+title: "Professional Alliance Members"
+description: "Meet the incredible lineup of  experts sharing their knowledge and expertise"
+image: "/images/logo/arc_logo_coloured.png"
+---
+
+<!-- Preloader -->
+<div class="preloader-new">
+  <!-- Logo -->
+  <div class="preloader-logo-new"></div>
+
+  <!-- Animated Loading Text -->
+  <div class="loader-new"></div>
+</div>
+
+<!--Display Members-->
+<section class="speakers-section-two" style="margin-top: 0">
+  <div class="auto-container">
+    <div class="sec-title text-center my-4">
+      <span class="display-4 text-danger font-weight-bold">Members</span>
+    </div>
+    <div class="row top-pd-mobile">
+      {% for member in site.members %}
+      {% if member.is_keynote == true %}
+      {% include member_block.liquid member=member designation="Keynote Member" %}
+      {% else %}
+      {% include member_block.liquid member=member designation="Member" %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
