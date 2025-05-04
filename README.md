@@ -1,16 +1,13 @@
-[![Deploy site](https://github.com/nairuby/rubyconf.africa/actions/workflows/deploy.yml/badge.svg)](https://github.com/nairuby/rubyconf.africa/actions/workflows/deploy.yml)
-[![Prettier code formatter](https://github.com/nairuby/rubyconf.africa/actions/workflows/prettier.yml/badge.svg)](https://github.com/nairuby/rubyconf.africa/actions/workflows/prettier.yml)
-
-# RubyConf Africa
+# Professional Alliance Group
 
 ## Setup
 
 To set up the project for the first time, follow these steps:
 
+For and clone the project
+
+Run the setup
 ```bash
-git clone https://github.com/nairuby/rubyconf.africa.git
-cd rubyconf.africa
-git checkout Ft/Conf-details
 make setup
 ```
 
@@ -23,7 +20,7 @@ If you need to update the project, you can follow these instructions:
 1. **Pull the latest changes:**
 
    ```bash
-   git pull origin Ft/Conf-details
+   git pull origin main
    ```
 
 2. **Update your local dependencies:**
