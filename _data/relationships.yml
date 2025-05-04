@@ -1,0 +1,22 @@
+# Member-Group Relationships
+# This file stores the relationships between members and groups
+# Format:
+# group_name:
+#   members:
+#     - member_name
+#     - member_name
+#   projects:
+#     - project_name
+#     - project_name
+
+ai-research-collective:
+  members:
+    - alice-smith
+    - bob-johnson
+    - charlie-williams
+    - eve-davis
+  projects:
+    - nlp-analysis
+    - computer-vision-study
+
+# Add more groups and their relationships here 
