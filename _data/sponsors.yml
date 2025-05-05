@@ -1,0 +1,70 @@
+- name: KCA University
+  image: ./images/2024/sponsors/kca_university.png
+  url: https://www.kcau.ac.ke/
+  categories: [previous]
+
+- name: KopoKopo
+  image: ./images/logo/kopokopo_logo.png
+  url: https://kopokopo.co.ke/
+  categories: [previous]
+
+- name: AppSignal
+  image: ./images/logo/app_signal_logo.png
+  url: https://www.appsignal.com/
+  categories: [previous]
+
+- name: Finplus Group
+  image: ./images/logo/finplus_group_logo.png
+  url: https://finplusgroup.com/
+  categories: [previous]
+
+- name: Africa Data School
+  image: ./images/logo/ads.svg
+  url: https://www.africadataschool.com/
+  categories: [previous]
+
+- name: Planet Argon
+  image: ./images/logo/planet_argon_logo.png
+  url: https://www.planetargon.com/
+  categories: [previous]
+
+- name: Solutech
+  image: ./images/logo/solutech_flat_logo.png
+  url: https://www.solutech.co.ke
+  categories: [previous]
+
+- name: Microverse
+  image: ./images/logo/microverse_logo.png
+  url: https://www.microverse.org/
+  categories: [previous]
+
+- name: Ruby Central
+  image: ./images/logo/ruby_central.png
+  url: https://rubycentral.org/
+  categories: [previous]
+
+- name: Friendly Ruby
+  image: ./images/logo/friendly-rb.webp
+  url: https://friendlyrb.com/
+  categories: [previous]
+
+- name: WNB
+  image: ./images/logo/wnb_rb_logo.png
+  url: https://www.wnb-rb.dev/
+  categories: [previous]
+
+- name: Quikk API
+  image: ./images/logo/quikk_api.jpg
+  url: https://quikk.dev/
+  categories: [previous]
+
+- name: Zote App
+  image: ./images/logo/zote_app.jpg
+  url: https://www.zoteapp.com/
+  categories: [previous]
+
+- name: Andpad
+  image: ./images/logo/andpad.png
+  url: https://andpad.co.jp/
+  categories: [previous]
+

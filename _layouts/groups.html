@@ -1,0 +1,107 @@
+---
+layout: application_group
+---
+
+<section class="speaker-detail">
+    <div class="auto-container">
+        <div class="row">
+            <div class="image-column col-lg-4 col-md-12 col-sm-12">
+                <div class="image-box">
+                    <figure class="image">
+                        {% if page.image %}
+                        <img src="{{ page.image }}" alt="{{ page.name }}" />
+                        {% else %}
+                        <img src="/images/groups/default.png" alt="{{ page.name }}" />
+                        {% endif %}
+                    </figure>
+                    <ul class="social-icon-two social-icon-colored text-center">
+                        {% if page.twitter and page.twitter != "" %}
+                        <li>
+                            <a href="{{ page.twitter }}" target="_blank"
+                            ><i class="fa-brands fa-x-twitter"></i
+                            ></a>
+                        </li>
+                        {% endif %} {% if page.linkedin and page.linkedin != "" %}
+                        <li>
+                            <a href="{{page.linkedin}}" target="_blank"
+                            ><i class="fab fa-linkedin"></i
+                            ></a>
+                        </li>
+                        {% endif %} {% if page.website and page.website != "" %}
+                        <li>
+                            <a href="{{page.website}}" target="_blank"
+                            ><i class="fas fa-globe"></i
+                            ></a>
+                        </li>
+                        {% endif %} {% if page.email and page.email != "" %}
+                        <li>
+                            <a href="mailto:{{ page.email }}"
+                            ><i class="fas fa-envelope"></i
+                            ></a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-column col-lg-8 col-md-12 col-sm-12">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-info-emphasis">{{ page.name }}</h3>
+                        <h5 class="text-secondary font-weight-bold">{{ page.short_description }}</h5>
+                        <p class="card-text text-black">{{ page.long_description }}</p>
+
+                        {% if page.members and page.members.size > 0 %}
+                        <h4 class="mt-4 text-info-emphasis">Members of {{ page.name }}</h4>
+                        <div class="row">
+                            {% for member_permalink in page.members %} {% assign member =
+                            site.members | where: "permalink", member_permalink | first %} {%
+                            if member %}
+                            <div class="col-lg-6 col-md-6 mb-3">
+                                <div class="border p-3 bg-white rounded shadow-sm d-flex align-items-center">
+                                    {% if member.image %}
+                                    <img
+                                            src="{{ member.image }}"
+                                            class="rounded-circle mr-3"
+                                            alt="{{ member.name }}"
+                                            style="width: 50px; height: 50px; object-fit: cover;"
+                                    />
+                                    {% else %}
+                                    <div class="rounded-circle mr-3 bg-secondary text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        {{ member.name | slice: 0, 1 | upcase }}
+                                    </div>
+                                    {% endif %}
+                                    <h6 class="font-weight-bold mb-0">
+                                        <a href="{{ member.permalink }}" class="text-dark">{{ member.name }}</a>
+                                    </h6>
+                                </div>
+                            </div>
+                            {% endif %} {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        {% if page.projects and page.projects.size > 0 %}
+                        <h4 class="mt-4 text-info-emphasis">Projects by {{ page.name }}</h4>
+                        <div class="row">
+                            {% for project_permalink in page.projects %} {% assign project =
+                            site.projects | where: "permalink", project_permalink | first %} {%
+                            if project %}
+                            <div class="col-lg-6 col-md-6 mb-3">
+                                <div class="border p-3 bg-white rounded shadow-sm">
+                                    <h6 class="font-weight-bold text-info-emphasis">
+                                        <a href="{{ project.permalink }}" class="text-dark">{{ project.name }}</a>
+                                    </h6>
+                                    {% if project.short_description %}
+                                    <p class="text-muted">{{ project.short_description }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endif %} {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
