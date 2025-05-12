@@ -1,3 +1,4 @@
+# ⚠️ THIS REPO HAS BEEN MOVED: [NEW LINK](https://github.com/African-Ruby-Community/professional_alliance_group) ⚠️
 # Professional Alliance Group
 
 ## Setup
